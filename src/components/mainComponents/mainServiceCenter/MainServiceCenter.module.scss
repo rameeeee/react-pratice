@@ -1,0 +1,43 @@
+@import '../../../assets/scss/common/mixin';
+
+.main_service_area {
+    .inner {
+        padding: 60px 40px 20px;
+    }
+    .title_wrap {
+        .section_title {
+            float: left;
+        }
+        .more_link {
+            float: right;
+            margin-top: 6px;
+            font-size: 16px;
+            line-height: 18px;
+            color: #03c75a;
+            vertical-align: middle;
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 7px;
+                height: 13px;
+                margin: -2px 0 0 3px;
+                background: url(../../../assets/img/mainpage/more_link_arrow.svg);
+                background-size: 100% auto;
+                vertical-align: middle;
+            }
+        }
+        &::after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+    }
+}
+
+@include mo {
+    .main_service_area {
+        .inner {
+            padding: 25px 16px 20px;
+        }
+    }
+}

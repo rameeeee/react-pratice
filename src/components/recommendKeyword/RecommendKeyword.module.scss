@@ -1,0 +1,80 @@
+@import '../../assets/scss/common/mixin';
+
+.recommend_keyword_area {
+    color: #222;
+    text-align: center;
+    .inner {
+        display: inline-flex;
+        padding: 24px 40px 20px;
+    }
+    .keyword_title {
+        margin: 0 15px 10px 0;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 34px;
+    }
+    .keyword_list {
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 16px;
+        .keyword_item {
+            position: relative;
+            background: #f7f7f7;
+            border-radius: 18px;
+            margin: 0 6px 10px 0;
+            white-space: nowrap;
+            &.new_item {
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: -2px;
+                    right: -2px;
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 50%;
+                    background: #ed2227;
+                }
+
+            }
+            .keyword_link {
+                display: block;
+                padding: 8px 15px;
+                line-height: 18px;
+            }
+        }
+    }
+}
+
+@include mo {
+    .recommend_keyword_area {
+        .inner {
+            display: block;
+            padding: 15px 16px;
+        }
+        .keyword_title {
+            float: left;
+            margin: 0 12px 10px 0;
+            font-size: 14px;
+            line-height: 30px;
+            &::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+        }
+        .keyword_list {
+            display: block;
+            text-align: left;
+            font-size: 15px;
+            .keyword_item {
+                display: inline-block;
+                margin: 0 7px 10px 0;
+                .keyword_link {
+                    padding: 8px 12px 7px;
+                    line-height: 15px;
+                }
+            }
+        }
+    }
+}

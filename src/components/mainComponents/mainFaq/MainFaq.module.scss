@@ -1,0 +1,15 @@
+@import '../../../assets/scss/common/mixin';
+
+.main_faq_area {
+    .inner {
+        padding: 60px 40px 20px;
+    }
+}
+
+@include mo {
+    .main_faq_area {
+        .inner {
+            padding: 43px 16px 20px;
+        }
+    }
+}

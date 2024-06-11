@@ -1,0 +1,28 @@
+@import '../../assets/scss/common/mixin';
+
+.banner_area {
+    .banner_link {
+        display: block;
+        height: 87px;
+        background: #E4F4FF url(../../assets/img/mainpage/banner_smartbot.png) 50% 50% no-repeat;
+        background-size: 1440px auto;
+    }
+}
+@include tab {
+    .banner_area {
+        .banner_link {
+            background: #E4F4FF url(../../assets/img/mainpage/banner_smartbot_tab.png) 50% 50% no-repeat;
+            background-size: 768px auto;
+        }
+    }
+}
+@include mo {
+    .banner_area {
+        .banner_link {
+            height: 0;
+            padding-top: 20.935%;
+            background: #E4F4FF url(../../assets/img/mainpage/banner_smartbot_mo.png) 50% 50% no-repeat;
+            background-size: 100% auto;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+@import '../../../assets/scss/common/mixin';
+
+.footer_list_area {
+    .footer_list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer_item {
+        flex-shrink: 0;
+        width: calc(100% / 6);
+        margin-top: 27px;
+        font-size: 17px;
+        line-height: 20px;
+        .footer_link {
+            display: block;
+        }
+        .img_wrap {
+            display: inline-block;
+            width: 18px;
+            height: 20px;
+            margin-right: 6px;
+            vertical-align: middle;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .footer_text {
+            vertical-align: middle;
+        }
+    }
+}
+@include tab {
+    .footer_list_area {
+        padding-left: 48px;
+        .footer_item {
+            width: calc(100% / 3);
+            margin-top: 24px;
+            font-size: 16px;
+            .img_wrap {
+                width: 21px;
+                height: 23px;
+            }
+        }
+    }
+}
+
+@include mo {
+    .footer_list_area {
+        padding-left: 0;
+        .footer_item {
+            width: calc(100% / 3);
+            margin-top: 19px;
+            font-size: 12px;
+            line-height: 14px;
+            .img_wrap {
+                width: 14px;
+                height: 14px;
+                margin-right: 2px;
+            }
+        }
+    }
+}
+
+@media (max-width: 374px) {
+    .footer_list_area {
+        padding-left: 20px;
+        .footer_item {
+            width: calc(100% / 2);
+        }
+    }
+}

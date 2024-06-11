@@ -1,0 +1,59 @@
+@import '../../../../assets/scss/common/mixin';
+
+.filter_category_area {
+    position: relative;
+    padding-top: 34px;
+    padding-right: 30px;
+    height: 74px;
+    overflow: hidden;
+    &.on {
+        height: auto;
+        overflow: initial;
+        .btn_more {
+            transform: scale(-1);
+        }
+    }
+
+    .filter_category_list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .category_item {
+        margin: 0 6px 8px 0;
+        border-radius: 15px;
+        background: #f4f4f4;    
+        font-size: 16px;
+        &.active {
+            background: #03c75a;
+            .btn_category {
+                color: #fff;
+            }
+        }
+        .btn_category {
+            padding: 6px 10px;
+        }
+    }
+    .btn_more {
+        position: absolute;
+        top: 35px;
+        right: -5px;
+        width: 30px;
+        height: 30px;
+        background: url(../../../../assets/img/mainpage/filter_menu_arrow.svg) 50% 50% no-repeat;
+        background-size: 19px 11px;
+    }
+}
+
+@include mo {
+    .filter_category_area {
+        height: 47px;
+        padding-top: 13px;
+        .category_item {
+            margin: 0 4px 4px 0;
+            font-size: 15px;
+        }
+        .btn_more {
+            top: 14px;
+        }
+    }
+}

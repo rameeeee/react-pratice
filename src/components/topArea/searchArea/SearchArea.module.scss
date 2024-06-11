@@ -1,0 +1,61 @@
+@import '../../../assets/scss/common/mixin';
+
+.search_area {
+    .search_box {
+        position: relative;
+        width: 586px;
+        margin: -28px auto 0;
+        padding: 0 102px 0 20px;
+        border-radius: 28px;
+        background: #fff;
+        z-index: 10;
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
+    }
+    .search_input {
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+        height: 56px;
+        padding: 18px 0;
+        color: #222;
+        font-size: 18px;
+        -webkit-appearance: none;
+        outline: none;
+        background: transparent;
+        border: none;
+    }
+    .btn_search {
+        position: absolute;
+        top: 11px;
+        right: 14px;
+        width: 35px;
+        height: 35px;
+        background: url(../../../assets/img/mainpage/toparea_btn_search.svg) 50% 50% no-repeat;
+        background-size: 26px auto;
+    }
+}
+
+@include mo {
+    .search_area {
+        .search_box {
+            width: 100%;
+            margin: -25px auto 0;
+            padding: 0 50px 0 20px;
+            box-shadow: 0 1px 2.5px 0 rgba(0, 0, 0, .1);
+        }
+        .search_input {
+            height: 50px;
+            padding: 15px 0;
+            font-size: 17px;
+        }
+        .btn_search {
+            right: 20px;
+            width: 30px;
+            height: 30px;
+            background: url(../../../assets/img/mainpage/toparea_btn_search.svg) 50% 50% no-repeat;
+            background-size: 24px auto;
+        }
+    }
+}

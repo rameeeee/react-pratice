@@ -1,0 +1,32 @@
+<svg width="104" height="106" viewBox="0 0 104 106" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <filter x="-7.3%" y="-5.2%" width="114.6%" height="114.6%" filterUnits="objectBoundingBox" id="vq3x4rtwca">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" in="shadowBlurOuter1"/>
+        </filter>
+        <filter x="-20.7%" y="-23.5%" width="141.4%" height="147.1%" filterUnits="objectBoundingBox" id="p8t6yy1erd">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0965029843 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <linearGradient x1="23.864%" y1="0%" x2="100%" y2="100%" id="f5h1qbk3oc">
+            <stop stop-color="#00DE63" offset="0%"/>
+            <stop stop-color="#1EC8EB" offset="100%"/>
+        </linearGradient>
+        <path d="M48 96c26.51 0 48-20.698 48-47.49C96 21.72 74.51 0 48 0S0 21.719 0 48.51C0 75.303 21.49 96 48 96z" id="gmki02yhyb"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(4 2)">
+            <use fill="#000" filter="url(#vq3x4rtwca)" xlink:href="#gmki02yhyb"/>
+            <use fill="url(#f5h1qbk3oc)" xlink:href="#gmki02yhyb"/>
+        </g>
+        <g filter="url(#p8t6yy1erd)" transform="translate(23 24)" fill="#FFF" fill-rule="nonzero">
+            <path d="M29.255 0c1.957 0 3.655 1.315 4.094 3.171.44 1.857-.497 3.762-2.258 4.594v5.723h13.856c2.915 0 5.28 2.298 5.285 5.135v23.114a5.073 5.073 0 0 1-1.539 3.652 5.36 5.36 0 0 1-3.746 1.515H18.193a8.154 8.154 0 0 0-4.571 1.39 332.58 332.58 0 0 1-3.815 2.543.998.998 0 0 1-1.018.045.944.944 0 0 1-.503-.863V18.623c0-2.836 2.363-5.135 5.277-5.135H27.42V7.765c-1.76-.832-2.697-2.737-2.258-4.594C25.599 1.315 27.298 0 29.255 0zM5.179 22.218V38.88C2.319 38.881 0 36.693 0 33.995v-6.931c.024-2.683 2.335-4.846 5.179-4.846zm47.642 0c2.85.022 5.155 2.183 5.179 4.855v6.912c0 2.688-2.312 4.874-5.179 4.896zM21.42 25.082a1.9 1.9 0 0 0-1.325.534 1.799 1.799 0 0 0-.55 1.29v6.09c0 1.007.84 1.824 1.875 1.824h.184c1.035 0 1.874-.817 1.874-1.823v-5.912c0-1.106-.922-2.003-2.058-2.003zm15.578.025c-1.086 0-1.966.856-1.966 1.913v5.887c0 1.056.88 1.913 1.966 1.913 1.086 0 1.966-.857 1.966-1.913V27.02c0-1.057-.88-1.913-1.966-1.913z"/>
+        </g>
+    </g>
+</svg>

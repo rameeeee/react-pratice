@@ -1,0 +1,63 @@
+@import '../../../assets/scss/common/mixin';
+
+.notice_swiper_area {
+    margin-right: 170px;
+    padding: 2px 0 7px;
+}
+.notice_swiper {
+    height: 38px;
+}
+.notice_slide {
+    padding: 8px 0;
+    font-size: 16px;
+    line-height: 22px;
+    color: #222;
+
+    .noti_label {
+        position: relative;
+        display: inline-block;
+        padding: 0 8px;
+        margin-right: 14px;
+        border-radius: 12px;
+        background: linear-gradient(120deg,#00de63,#1ec8eb 100%);
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 22px;
+        color: #fff;
+        &.emergency_label {
+            background: linear-gradient(120deg,#f3743e,#ff3147 100%);
+        }
+        &.type_new {
+            &::after {
+                content: '';
+                position: absolute;
+                top: -2px;
+                right: -2px;
+                width: 3px;
+                height: 3px;
+                border-radius: 50%;
+                background: #ed2227;
+            }
+        }
+    }
+    .noti_link {
+        vertical-align: middle;
+    }
+}
+
+@include mo {
+    .notice_swiper_area {
+        margin-right: 0;
+    }
+    .notice_swiper {
+        height: 32px;
+    }
+    .notice_slide {
+        padding: 5px 0;
+        font-size: 15px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+    }
+}

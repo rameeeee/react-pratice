@@ -1,0 +1,74 @@
+@import '../../assets/scss/common/mixin';
+
+.top_area {
+    position: relative;
+    height: 203px;
+    background: linear-gradient(103deg, #00de63 23%, #1ec8eb 100%);
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    &::before {
+        content: '';
+        position: absolute;
+        top: -55px;
+        left: 50%;
+        width: 216px;
+        height: 161px;
+        margin-left: -518px;
+        background: url(../../assets/img/mainpage/toparea_bg01.svg);
+        background-size: 100% auto;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 53px;
+        left: 50%;
+        width: 333px;
+        height: 150px;
+        margin-left: 232px;
+        background: url(../../assets/img/mainpage/toparea_bg02.svg);
+        background-size: 100% auto;
+    }
+    .inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+    .top_title {
+        margin-top: -2px;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 58px;
+        color: #fff;
+    }
+    .top_text {
+        margin-top: 10px;
+        font-size: 22px;
+        line-height: 33px;
+    }
+}
+
+@include tab {
+    .top_area {
+        background: linear-gradient(114deg, #00de63 23%, #1ec8eb 100%);
+    }
+}
+
+@include mo {
+    .top_area {
+        height: 181px;
+        background: linear-gradient(130deg, #00de63 23%, #1ec8eb 100%);
+
+        .top_title {
+            margin-top: -17px;
+            font-size: 34px;
+            line-height: 36px;
+        }
+        .top_text {
+            margin-top: 9px;
+            font-size: 19px;
+            line-height: 21px;
+        }
+    }
+}

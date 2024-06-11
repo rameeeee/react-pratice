@@ -1,0 +1,37 @@
+$mobile: 767px;
+$tabMin : 768px;
+$tabMax : 1023px;
+$desktop: 1024px;
+
+
+// @mixin mo{
+//     @media (max-width: $mobile){
+//         @content;
+//     }
+// }
+// @mixin pc{
+//     @media (min-width: $desktop){
+//         @content;
+//     }
+// }
+// @mixin tab {
+//     @media (min-width: $tabMin) and (max-width: $tabMax) {
+//         @content;
+//     }
+// }
+
+@mixin pc {
+    @media screen and (min-width: $desktop) {
+        @content;
+    }
+}
+@mixin tab {
+    @media screen and (min-width: $tabMin) and (max-width: $tabMax) {
+        @content;
+    }
+}
+@mixin mo{
+    @media screen and (max-width: $mobile) {
+        @content;
+    }
+}

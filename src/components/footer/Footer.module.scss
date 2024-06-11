@@ -1,0 +1,133 @@
+@import '../../assets/scss/common/mixin';
+
+
+.footer_area {
+    background: #282b2d;
+    padding: 23px 0 46px;
+    font-size: 15px;
+    line-height: 17px;
+    color: rgba(255, 255, 255, 0.6);
+
+    .footer_info_wrap {
+        text-align: center;
+        margin-top: 47px;
+        color: #888;
+        .footer_info_list {
+            margin-top: 12px;
+            &.main_info {
+                font-weight: 700;
+                color: #bbbaba;
+            }
+        }
+        .footer_info_item {
+            position: relative;
+            display: inline-block;
+            margin: 0 11px;
+            & + .footer_info_item {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 4px;
+                    left: -12px;
+                    width: 1px;
+                    height: 10px;
+                    background: #444;
+                }
+            }
+            &.on {
+                .language_list_wrap {
+                    display: block;
+                }
+                .language_text {
+                    &::after {
+                        transform: scale(-1);
+                    }
+                }
+            }
+
+            .language_text {
+                vertical-align: middle;
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    width: 16px;
+                    height: 16px;
+                    margin: -4px 6px 0 0 ;
+                    background: url(../../assets/img/mainpage/icon_language.svg) 50% 50% no-repeat;
+                    background-size: 100% auto;
+                    vertical-align: middle;
+                }
+                &:after {
+                    content: '';
+                    display: inline-block;
+                    width: 9px;
+                    height: 6px;
+                    margin-left: 3px;
+                    background: url(../../assets/img/mainpage/footer_arrow.svg) 50% 50% no-repeat;
+                    background-size: 100% auto;
+                    vertical-align: middle;
+                }
+            }
+            .language_list_wrap {
+                display: none;
+                position: absolute;
+                bottom: 27px;
+                right: 0;
+                min-width: 75px;
+                padding: 8px 0 7px;
+                background: #444;
+                border-radius: 5px;
+                box-shadow: 0 1px 4px 0 rgba(0,0,0,.2);
+                text-align: left;
+                z-index: 10;
+                .language_item {
+                    margin: 0 8px;
+                    & + .language_item {
+                        margin-top: 6px;
+                    }
+                    &:first-child {
+                        margin-top: 0;
+                    }
+                    &.on {
+                        .language_item_link {
+                            background: #282b2d;
+                            color: #fff;
+                        }
+                    }
+                    .language_item_link {
+                        display: block;
+                        padding: 0 10px;
+                        border-radius: 13px;
+                        line-height: 27px;
+                    }
+                }
+            }
+
+            .btn_detail {
+                color: inherit;
+            }
+        }
+    }
+}
+
+@include mo {
+    .footer_area {
+        .inner {
+            padding: 0 15px;
+        }
+        padding: 16px 0 40px;
+        font-size: 12px;
+        line-height: 14px;
+        .footer_info_wrap {
+            .footer_info_list {
+                margin-top: 8px;
+            }
+            .footer_info_item {
+                &.copyright {
+                    display: block;
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+}
